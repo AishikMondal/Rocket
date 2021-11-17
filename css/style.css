@@ -1,0 +1,29 @@
+/* Add all your styles here */
+body {
+    font-size: 15pt;
+    background-color: #01FFF0;
+}
+img{
+  position: absolute;
+margin-top: 560px;
+margin-left: 140px;
+z-index: 5;
+}
+.btns{
+  position: absolute;
+  margin-bottom: 60px;
+  opacity: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ 
+  
+}
+button{
+ height: 40px;
+ width: 80px;
+ color: #42C8A1;
+margin-left:   20px;
+ background-color: #F4FF00;
+ z-index: 1;
+}

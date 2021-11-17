@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ai's Missile</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <img  onclick="stop()"   id="rc"  src="rocket.png" alt="" height="100px" width="50px"/>
+  <div class="btns">
+  <button type="button" onclick="run()">up</button>
+  <button  type="button" onclick="left()">left</button>
+  <button type="button" onclick="right()">right</button>
+ 
+  </div>
+  <!-- Project -->
+  <script>
+  var m = 560;
+  var ml = 140;
+  function run(){
+ var  y = setInterval(up, 60);
+    function up(){
+      if(m>0){
+      m -= 5;
+         var rocket = document.getElementById("rc");
+         rocket.style.marginTop = m + "px";
+         console.log(m);
+      }
+      else{
+        
+        clearInterval(y);
+        alert("Press The Up button To start");
+        m = 560;
+        rocket.style.marginTop = m + "px";
+      
+      }
+     
+    
+   
+    }
+    }
+   function left(){
+    ml -= 10;
+    var rocket = document. getElementById("rc");
+    rocket.style.backgroundColor = "black";
+    rocket.style.marginLeft = ml + "px";
+   
+    
+   }
+   function right(){
+     ml += 10;
+     var rocket = document.getElementById("rc");
+     rocket.style.marginLeft = ml + "px";
+   }
+   function stop(){
+     
+       }
+     </script>
+</body>
+</html>
